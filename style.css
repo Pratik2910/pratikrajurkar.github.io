@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+ *{   margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: right;
+  
+}
+.nav ul{
+    padding: 10px;
+}
+.nav ul a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+}
+.nav ul a li{
+    display: inline-block;
+   font-size: 1.5em;
+    text-align: center;
+}
+/*-----------------------------------------------------------------------*/
+.main{
+    background-color: rgb(0, 0, 0);
+    
+     width: 100%;
+    height: 100vh;
+    color: white;
+    padding-top: 30px;
+ 
+}
+.infocontainer{
+    width: 90vw;
+    height: 80vh;
+    /* background: #d00e0e; */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.img img{
+    width: 20vw;
+    height: 80vh;
+}
+.info{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.hello{
+    font-size: 65px;
+    font-family: 'Source Code Pro', monospace;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+.intro{
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.buttons button{
+    color: azure;
+    background-color: rgb(143, 143, 239);
+    border-radius: 2em;
+    padding: 2px  10px;
+    margin-top: 26px;
+    margin-right: 15px;
+}
+.buttons button:hover{ 
+    background-color: rgb(203, 214, 225);
+    color: black;
+    cursor: pointer;
+}
