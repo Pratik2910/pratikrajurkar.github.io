@@ -1,48 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <section>
-    <div class="nav">
-        <ul>
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <a href="#">
-                <li>About Me</li>
-            </a>
-            <a href="#">
-                <li>Skills</li>
-            </a>
-            <a href="#">
-                <li>Contact</li>
-            </a>
-        </ul>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, I am  <span class="text-color-main name">Pratik</span>
+          <br />
+          I'm the Aspiring Software Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
     </div>
-</section>
-    <div class="main">
-        <div class="infocontainer">
-            <div class="info">
-                <div class="hello">Hi I am</div>
-                <div class="name">Pratik Rajurkar</div>
-                <div class="intro">from Jspm's RSCOE ,Pune</div>
-                <div class="buttons">
-                <button class="cv">Download CV</button>
-                <button class="contact">Contact Me</button>
-            </div>
-            </div>
-            <div class="img"><img src="Men.png" alt="" class="s"></div>
-           
-        </div>
-    </div>
-</body>
+    <!-- /END Hero Section -->
 
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="pratikpic.png"
+              alt="Profile Image"
+              width="650"
+              height="450"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am currently pursuing B.Tech in Information Technology from JSPM’s Rajarshi Shahu College of Engineering. I
+have a proficiency in Java programming and data structures. I possess a foundation in Computer Science concepts and have
+hands-on experience in applying to solve problems. I am driven, enthusiastic, and eager to contribute my skills
+and knowledge to real-world projects and seeking opportunities in the field of IT.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="https://drive.google.com/file/d/1mBHFasetctle5FUdUzeGJ0m99KpXAEjt/view?usp=drive_link" class="cta-btn cta-btn--resume" target="_blank">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="rown">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Ecommerce Website</h3>
+              <p class="project-wrapper__text-info">
+                Developed a website where user can register, login and order Products.
+                <br>Skills : Web Development
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://appajifoods.000webhostapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="rown">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">ATM Machine Application</h3>
+              <p class="project-wrapper__text-info">
+                Developed ATM Machine application with key features login, check the account balance, withdraw money, and
+                deposit money
+                <br> Skills : Java, Object Oriented Programming.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/pratik2910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source code</a
+                >
+              </div>
+            </div>
+
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="rown">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Expense Manager WebApp</h3>
+              <p class="project-wrapper__text-info">
+                Developed Expense Manager Web Application which display essential information such as individual’s total
+                expenses, income, and savings
+               <br> Skills : python ,Django ,SQLite.
+              </p>
+              
+            </div>
+
+            
+          </article>
+          <!-- /END Project -->
+           <!-- Each .row is a project -->
+           <article class="rown">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">AI-ML Based Health Care Application</h3>
+              <p class="project-wrapper__text-info">
+                Aims to develop healthcare application which provide primary remedy for viral disease.
+               <br> Skills : AI ,ML ,Data Analysis
+              </p>
+             
+            </div>
+           
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <!-- <p class="contact-wrapper__text">linkedin</p> -->
+          <a href="https://www.linkedin.com/in/pratik-rajurkar-126b55221" class="cta-btn cta-btn--resume">Linkedin</a>
+          <a href="mailto: pratikrajurkar18@gmail.com" class="cta-btn cta-btn--resume">Mail</a>
+          <a href="tel: 7798380453" class="cta-btn cta-btn--resume">Call</a>
+          
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <!-- <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        
+      </div>
+    </footer> -->
+    <!-- END Footer Section -->
+</body>
 </html>
